@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html class="scroll-smooth" lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>The WhatsApp Influencing Program | Premium Education</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Chivo:wght@400;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+    <link rel="icon" type="image/png" href="https://lh3.googleusercontent.com/aida-public/AB6AXuBzSGsBTE_EQrZluiKEtemt1MDe4TqUc48DLH0iaUGxVun9f8y3VJ0dElnUIqEqftq0MZ660HS7zI1A8VANhDEGF5TPG7FOciMLTe41CrevQjNjYf6u81XJ-fVYcII8cg-F4P9b8I2ekZ_ggztywM771bUMQl55gtBU9_A67OknLqgcceBjtl9wDxnswGoYAZ-WKP75OQe9E2ZeTqwzvi4zttn7T89pehthLnh6PknBy3qUS39dmEReqj_mbwF6NFr152b3h9iUYE8R"/>
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "surface-dim": "#dbdad9",
+                        "tertiary": "#000000",
+                        "on-background": "#1b1c1c",
+                        "inverse-surface": "#303030",
+                        "on-error-container": "#93000a",
+                        "secondary-container": "#fdb967",
+                        "primary-fixed": "#e5e2e1",
+                        "on-error": "#ffffff",
+                        "on-primary-fixed": "#1b1b1b",
+                        "on-tertiary-fixed": "#2b1609",
+                        "error-container": "#ffdad6",
+                        "on-primary": "#ffffff",
+                        "on-secondary-container": "#764800",
+                        "secondary-fixed-dim": "#fdb967",
+                        "primary-container": "#1b1b1b",
+                        "primary": "#000000",
+                        "secondary": "#865304",
+                        "tertiary-container": "#2b1609",
+                        "surface-tint": "#5f5e5e",
+                        "outline": "#747878",
+                        "surface-container-highest": "#e4e2e2",
+                        "surface-variant": "#e4e2e2",
+                        "on-secondary-fixed": "#2b1700",
+                        "tertiary-fixed": "#ffdbc9",
+                        "on-surface": "#1b1c1c",
+                        "surface-container-low": "#f5f3f3",
+                        "on-surface-variant": "#444748",
+                        "background": "#fbf9f8",
+                        "surface-container-lowest": "#ffffff",
+                        "outline-variant": "#c4c7c7",
+                        "error": "#ba1a1a",
+                        "on-tertiary-container": "#9e7d6a",
+                        "inverse-on-surface": "#f2f0f0",
+                        "on-tertiary-fixed-variant": "#5c4131",
+                        "on-tertiary": "#ffffff",
+                        "surface": "#fbf9f8",
+                        "on-primary-container": "#858383",
+                        "inverse-primary": "#c8c6c5",
+                        "on-secondary-fixed-variant": "#663e00",
+                        "secondary-fixed": "#ffddb9",
+                        "on-secondary": "#ffffff",
+                        "surface-bright": "#fbf9f8",
+                        "primary-fixed-dim": "#c8c6c5",
+                        "surface-container": "#efeded",
+                        "tertiary-fixed-dim": "#e5bfaa",
+                        "on-primary-fixed-variant": "#474746",
+                        "surface-container-high": "#e9e8e7",
+                        "brand-gold": "#C78A3D"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "base": "8px",
+                        "container-max": "1280px",
+                        "margin-mobile": "20px",
+                        "section-gap": "120px",
+                        "gutter": "24px"
+                    },
+                    "fontFamily": {
+                        "headline-md": ["Chivo"],
+                        "body-lg": ["Inter"],
+                        "display-lg": ["Chivo"],
+                        "label-caps": ["Inter"],
+                        "headline-lg": ["Chivo"],
+                        "headline-lg-mobile": ["Chivo"],
+                        "body-md": ["Inter"]
+                    },
+                    "fontSize": {
+                        "headline-md": ["32px", {"lineHeight": "40px", "letterSpacing": "-0.02em", "fontWeight": "600"}],
+                        "body-lg": ["18px", {"lineHeight": "32px", "letterSpacing": "0em", "fontWeight": "400"}],
+                        "display-lg": ["72px", {"lineHeight": "80px", "letterSpacing": "-0.04em", "fontWeight": "800"}],
+                        "label-caps": ["12px", {"lineHeight": "16px", "letterSpacing": "0.1em", "fontWeight": "600"}],
+                        "headline-lg": ["48px", {"lineHeight": "56px", "letterSpacing": "-0.03em", "fontWeight": "700"}],
+                        "headline-lg-mobile": ["32px", {"lineHeight": "40px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                        "body-md": ["16px", {"lineHeight": "28px", "letterSpacing": "0em", "fontWeight": "400"}]
+                    }
+                },
+            },
+        }
+    </script>
+    <style>
+        .glass-card {
+            background: rgba(255, 255, 255, 0.72);
+            backdrop-filter: blur(20px);
+            border: 1px solid rgba(255, 255, 255, 0.4);
+            box-shadow: 0 40px 40px -10px rgba(0,0,0,0.05);
+        }
+        .text-gradient-gold {
+            background: linear-gradient(135deg, #C78A3D 0%, #865304 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .btn-gold {
+            background-color: #C78A3D;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        .btn-gold:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 20px -5px rgba(199, 138, 61, 0.4);
+        }
+    </style>
+    <!-- Meta Pixel Code --> <script> !function(f,b,e,v,n,t,s) {if(f.fbq)return;n=f.fbq=function(){n.callMethod? n.callMethod.apply(n,arguments):n.queue.push(arguments)}; if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0'; n.queue=[];t=b.createElement(e);t.async=!0; t.src=v;s=b.getElementsByTagName(e)[0]; s.parentNode.insertBefore(t,s)}(window, document,'script', 'https://connect.facebook.net/en_US/fbevents.js'); fbq('init', '1613269150163418'); fbq('track', 'PageView'); </script> <noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=1613269150163418&ev=PageView&noscript=1" /></noscript> <!-- End Meta Pixel Code -->
+</head>
+<body class="bg-background text-on-background font-body-md selection:bg-secondary-container">
+
+    <!-- TopNavBar -->
+    <nav class="bg-surface/72 backdrop-blur-xl dark:bg-surface-container/72 docked full-width top-0 sticky z-50 border-b border-outline-variant/30 shadow-sm dark:shadow-none">
+        <div class="flex justify-between items-center px-margin-mobile md:px-gutter max-w-container-max mx-auto h-20">
+            <div class="text-body-lg font-headline-lg tracking-tighter text-on-surface dark:text-on-surface-variant uppercase">
+                WhatsApp <span class="text-secondary">Influencing</span>
+            </div>
+            
+            <!-- Desktop Menu -->
+            <div class="hidden md:flex gap-gutter items-center">
+                <a class="text-on-surface-variant/70 hover:text-secondary transition-colors duration-300 font-label-caps text-label-caps" href="#about">About</a>
+                <a class="text-secondary font-bold border-b-2 border-secondary font-label-caps text-label-caps" href="#join">Join</a>
+                <a class="btn-gold text-white px-6 py-3 rounded-full font-label-caps text-label-caps tracking-widest uppercase" href="#join">Join Now</a>
+            </div>
+
+            <!-- Mobile Menu Toggle Button -->
+            <button id="mobile-menu-btn" class="md:hidden material-symbols-outlined text-on-surface p-2">menu</button>
+        </div>
+
+        <!-- Mobile Menu (Hidden by default) -->
+        <div id="mobile-menu" class="hidden md:hidden absolute top-20 left-0 w-full bg-surface border-b border-outline-variant/30 shadow-lg pb-6">
+            <div class="flex flex-col px-margin-mobile gap-6 pt-4">
+                <a class="text-on-surface-variant/70 hover:text-secondary font-label-caps text-label-caps block" href="#about">About</a>
+                <a class="text-secondary font-bold font-label-caps text-label-caps block" href="#join">Join</a>
+                <a class="btn-gold text-white px-6 py-3 rounded-full font-label-caps text-label-caps tracking-widest uppercase text-center block w-full mt-2" href="#join">Join Now</a>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="relative pt-16 pb-section-gap overflow-hidden">
+            <div class="max-w-container-max mx-auto px-margin-mobile md:px-gutter grid md:grid-cols-2 gap-16 items-center">
+                <!-- Left Content -->
+                <div class="flex flex-col gap-8">
+                    <span class="inline-block px-4 py-1 rounded-full bg-secondary-container/20 text-secondary font-label-caps text-label-caps tracking-widest w-fit">NEW PROGRAM NOW OPEN</span>
+                    <h1 class="font-headline-lg text-headline-lg-mobile md:text-headline-lg text-on-background leading-tight">
+                        THE WHATSAPP <br/>
+                        <span class="text-gradient-gold">INFLUENCING PROGRAM</span>
+                    </h1>
+                    <p class="font-headline-md text-headline-md text-secondary leading-snug max-w-xl">
+                        "How I Made ₦5 Million in One Month Using Only WhatsApp."
+                    </p>
+                    <p class="font-body-lg text-body-lg text-on-surface-variant max-w-lg">
+                        Build a Personal Brand That People Trust, Grow an Engaged Audience, and Turn WhatsApp Into a Powerful Platform for Influence and Income.
+                    </p>
+                    <ul class="flex flex-col gap-4">
+                        <li class="flex items-center gap-3">
+                            <span class="material-symbols-outlined text-secondary" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+                            <span class="text-body-md font-body-md">No thousands of followers required.</span>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <span class="material-symbols-outlined text-secondary" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+                            <span class="text-body-md font-body-md">No expensive equipment.</span>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <span class="material-symbols-outlined text-secondary" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+                            <span class="text-body-md font-body-md">No need to go viral.</span>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <span class="material-symbols-outlined text-secondary" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+                            <span class="text-body-md font-body-md">No need to be famous.</span>
+                        </li>
+                    </ul>
+                    <div class="flex flex-wrap gap-4 pt-4">
+                        <button class="btn-gold text-white px-8 py-4 rounded-xl font-headline-md text-body-md active:scale-95 transition-transform"><a href="#join" class="text-white no-underline">JOIN THE PROGRAM</a></button>
+                        <button class="border border-on-background text-on-background px-8 py-4 rounded-xl font-headline-md text-body-md hover:bg-on-background hover:text-white transition-all"><a href="#about" class="text-on-background no-underline">LEARN MORE</a></button>
+                    </div>
+                </div>
+
+                <!-- Right Content -->
+                <div class="relative flex justify-center">
+                    <div class="absolute w-[400px] h-[400px] rounded-full border-2 border-brand-gold/30 -z-10 animate-pulse"></div>
+                    <div class="absolute w-[500px] h-[500px] rounded-full border border-brand-gold/10 -z-10"></div>
+                    <div class="relative">
+                        <img alt="Confidence Udeh Coach Portrait" class="w-full max-w-sm rounded-b-full drop-shadow-2xl grayscale hover:grayscale-0 transition-all duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBzSGsBTE_EQrZluiKEtemt1MDe4TqUc48DLH0iaUGxVun9f8y3VJ0dElnUIqEqftq0MZ660HS7zI1A8VANhDEGF5TPG7FOciMLTe41CrevQjNjYf6u81XJ-fVYcII8cg-F4P9b8I2ekZ_ggztywM771bUMQl55gtBU9_A67OknLqgcceBjtl9wDxnswGoYAZ-WKP75OQe9E2ZeTqwzvi4zttn7T89pehthLnh6PknBy3qUS39dmEReqj_mbwF6NFr152b3h9iUYE8R"/>
+                        
+                        <!-- Floating Card -->
+                        <div class="absolute -bottom-10 -right-10 md:-right-20 glass-card p-6 rounded-2xl max-w-xs animate-bounce" style="animation-duration: 4s;">
+                            <div class="flex items-center gap-4 mb-4">
+                                <div class="p-2 bg-on-background rounded-lg">
+                                    <span class="material-symbols-outlined text-white">trending_up</span>
+                                </div>
+                                <div>
+                                    <p class="text-label-caps font-label-caps text-on-surface-variant">MONTHLY REVENUE</p>
+                                    <p class="text-headline-md font-headline-md text-brand-gold">₦5,000,000</p>
+                                </div>
+                            </div>
+                            <img alt="PalmPay Earnings Proof Statement" class="w-full rounded-lg border border-outline-variant/30" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCzjUuDxYKuC0RysMHSQc94gehRy-kS6m6VsJ3_CrQBOROAixOcZsfzb3vEXR6Cw_W6Ptk7ZMGCkaHlvBgsL9Ox7MSe_sQtsGUWDjkBSkamk0FVNcAxqCZY2MAGGZoxatLpPwWo5tt8y1Ra_dkMhVCWi4dsoJAQcxBr06WID5qKepGxko-wbQXmMujYfAoe29o137kMoR5GbPvdB17OgADFiA1s3J4vI9A8ZXBRhqxeMuCVj6nLRmDYeffTpruQeX2S9yi9dic6eEii"/>
+                            <div class="mt-3 py-1 px-3 bg-secondary-container/20 text-secondary text-[10px] font-bold rounded-full text-center uppercase tracking-widest">₦5 Million in One Month</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Proof Bar -->
+        <section class="bg-surface-container-low py-16 border-y border-outline-variant/20">
+            <div class="max-w-container-max mx-auto px-margin-mobile md:px-gutter grid grid-cols-2 md:grid-cols-5 gap-base text-center">
+                <div class="p-4 flex flex-col items-center gap-4">
+                    <span class="material-symbols-outlined text-secondary text-4xl">smartphone</span>
+                    <p class="font-headline-md text-body-md leading-tight">100% Done on <br/>WhatsApp</p>
+                </div>
+                <div class="p-4 flex flex-col items-center gap-4">
+                    <span class="material-symbols-outlined text-secondary text-4xl">groups</span>
+                    <p class="font-headline-md text-body-md leading-tight">Helped Thousands <br/>of People</p>
+                </div>
+                <div class="p-4 flex flex-col items-center gap-4">
+                    <span class="material-symbols-outlined text-secondary text-4xl">payments</span>
+                    <p class="font-headline-md text-body-md leading-tight">Built a Profitable <br/>Online Business</p>
+                </div>
+                <div class="p-4 flex flex-col items-center gap-4">
+                    <span class="material-symbols-outlined text-secondary text-4xl">account_balance_wallet</span>
+                    <p class="font-headline-md text-body-md leading-tight">Multiple Streams <br/>of Income</p>
+                </div>
+                <div class="p-4 flex flex-col items-center gap-4 col-span-2 md:col-span-1">
+                    <span class="material-symbols-outlined text-secondary text-4xl">mood</span>
+                    <p class="font-headline-md text-body-md leading-tight">Financial Freedom <br/>&amp; Peace of Mind</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Welcome Section -->
+        <section class="py-section-gap" id="about">
+            <div class="max-w-4xl mx-auto px-margin-mobile text-center flex flex-col gap-8">
+                <span class="font-label-caps text-label-caps tracking-widest text-secondary">WELCOME TO</span>
+                <h2 class="font-headline-lg text-headline-md md:text-headline-lg">The WhatsApp Influencing Program</h2>
+                <div class="h-1 w-24 bg-brand-gold mx-auto rounded-full"></div>
+                <p class="text-body-lg font-body-lg text-on-surface-variant leading-relaxed max-w-3xl mx-auto">
+                    A practical, step-by-step training designed to show you how to build your personal brand, create content that connects, grow an audience that trusts you, attract partnerships, and monetize your influence using WhatsApp.
+                </p>
+                
+                <!-- NEW: Centered Video Container with Autoplay and Mute Controls -->
+                <div class="video-container mx-auto w-full aspect-video relative rounded-2xl overflow-hidden shadow-2xl mt-8 border border-brand-gold/20 bg-black group">
+                    <div id="youtube-player" class="absolute top-0 left-0 w-full h-full pointer-events-auto"></div>
+                    
+                    <!-- Custom Mute Toggle Button -->
+                    <button id="mute-toggle" class="glass-card absolute bottom-6 right-6 p-4 rounded-full flex items-center justify-center text-on-surface hover:text-brand-gold transition-colors z-10 group/btn cursor-pointer shadow-lg opacity-0 group-hover:opacity-100 duration-300">
+                        <span id="mute-icon" class="material-symbols-outlined text-2xl">volume_off</span>
+                        <span id="mute-text" class="absolute right-full mr-4 bg-surface px-3 py-2 rounded-lg text-sm font-bold opacity-0 group-hover/btn:opacity-100 transition-opacity whitespace-nowrap pointer-events-none shadow-md">Click to Unmute</span>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Three Column Section -->
+        <section class="py-section-gap bg-surface-container-lowest">
+            <div class="max-w-container-max mx-auto px-margin-mobile md:px-gutter grid md:grid-cols-3 gap-gutter">
+                <!-- Imagine If -->
+                <div class="glass-card p-10 rounded-3xl flex flex-col gap-6 h-full">
+                    <span class="material-symbols-outlined text-secondary text-4xl">lightbulb</span>
+                    <h3 class="font-headline-md text-headline-md">IMAGINE IF...</h3>
+                    <p class="text-body-md font-body-md text-on-surface-variant">Imagine opening WhatsApp every morning knowing your status is doing more than getting views.</p>
+                    <ul class="flex flex-col gap-3">
+                        <li class="flex gap-3 text-body-md"><span class="material-symbols-outlined text-secondary text-sm" style="font-variation-settings: 'FILL' 1;">check_circle</span> It's building your reputation.</li>
+                        <li class="flex gap-3 text-body-md"><span class="material-symbols-outlined text-secondary text-sm" style="font-variation-settings: 'FILL' 1;">check_circle</span> It's attracting opportunities.</li>
+                        <li class="flex gap-3 text-body-md"><span class="material-symbols-outlined text-secondary text-sm" style="font-variation-settings: 'FILL' 1;">check_circle</span> It's helping people trust you.</li>
+                        <li class="flex gap-3 text-body-md"><span class="material-symbols-outlined text-secondary text-sm" style="font-variation-settings: 'FILL' 1;">check_circle</span> It's bringing clients, customers, collaborations, or sales.</li>
+                    </ul>
+                    <p class="font-bold text-on-background mt-auto">That's what this program is designed to help you achieve.</p>
+                </div>
+
+                <!-- Why This Program Exists -->
+                <div class="glass-card p-10 rounded-3xl flex flex-col gap-6 h-full border-brand-gold/20 shadow-xl">
+                    <span class="material-symbols-outlined text-secondary text-4xl">target</span>
+                    <h3 class="font-headline-md text-headline-md">WHY THIS PROGRAM EXISTS</h3>
+                    <p class="text-body-md font-body-md text-on-surface-variant">Most people use WhatsApp only to chat. A few people use it intentionally to build relationships, create opportunities, and grow a business.</p>
+                    <p class="text-body-md font-body-md text-on-surface-variant italic">The difference isn't luck. It's strategy.</p>
+                    <p class="text-body-md font-body-md text-on-surface-variant">This program teaches you how to use one of the world's most-used apps to build influence with purpose.</p>
+                </div>
+
+                <!-- You'll Learn How To -->
+                <div class="glass-card p-10 rounded-3xl flex flex-col gap-6 h-full">
+                    <span class="material-symbols-outlined text-secondary text-4xl">school</span>
+                    <h3 class="font-headline-md text-headline-md uppercase tracking-tight">YOU'LL LEARN HOW TO</h3>
+                    <div class="flex flex-col gap-2 max-h-[400px] overflow-y-auto pr-2 custom-scrollbar">
+                        <div class="p-3 bg-surface rounded-xl flex gap-3 items-center">
+                            <span class="material-symbols-outlined text-secondary">verified</span>
+                            <span class="text-label-caps font-label-caps">Build a memorable personal brand</span>
+                        </div>
+                        <div class="p-3 bg-surface rounded-xl flex gap-3 items-center">
+                            <span class="material-symbols-outlined text-secondary">verified</span>
+                            <span class="text-label-caps font-label-caps">Create content that connects</span>
+                        </div>
+                        <div class="p-3 bg-surface rounded-xl flex gap-3 items-center">
+                            <span class="material-symbols-outlined text-secondary">verified</span>
+                            <span class="text-label-caps font-label-caps">Overcome the fear of posting</span>
+                        </div>
+                        <div class="p-3 bg-surface rounded-xl flex gap-3 items-center">
+                            <span class="material-symbols-outlined text-secondary">verified</span>
+                            <span class="text-label-caps font-label-caps">Grow your audience ethically</span>
+                        </div>
+                        <div class="p-3 bg-surface rounded-xl flex gap-3 items-center">
+                            <span class="material-symbols-outlined text-secondary">verified</span>
+                            <span class="text-label-caps font-label-caps">Build trust with your viewers</span>
+                        </div>
+                        <div class="p-3 bg-surface rounded-xl flex gap-3 items-center">
+                            <span class="material-symbols-outlined text-secondary">verified</span>
+                            <span class="text-label-caps font-label-caps">Secure paid collaborations</span>
+                        </div>
+                        <div class="p-3 bg-surface rounded-xl flex gap-3 items-center">
+                            <span class="material-symbols-outlined text-secondary">verified</span>
+                            <span class="text-label-caps font-label-caps">Monetize your influence</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Feature/Quote Section -->
+        <section class="py-section-gap bg-primary text-white">
+            <div class="max-w-4xl mx-auto px-margin-mobile text-center">
+                <div class="flex justify-center mb-8">
+                    <span class="material-symbols-outlined text-brand-gold text-6xl">format_quote</span>
+                </div>
+                <h2 class="font-headline-lg text-headline-md md:text-headline-lg leading-tight">
+                    "This isn’t about becoming popular. <br/>
+                    <span class="text-brand-gold">It’s about becoming valuable."</span>
+                </h2>
+            </div>
+        </section>
+
+        <!-- Meet Your Coach -->
+        <section class="py-section-gap">
+            <div class="max-w-container-max mx-auto px-margin-mobile md:px-gutter grid md:grid-cols-2 gap-16 items-center">
+                <div class="relative order-2 md:order-1 mb-10 md:mb-0">
+                    <div class="aspect-[4/5] rounded-3xl overflow-hidden shadow-2xl relative">
+                        <div class="absolute inset-0 bg-gradient-to-t from-brand-gold/20 to-transparent"></div>
+                        <img alt="Coach Confidence Udeh Close-up Portrait" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBzSGsBTE_EQrZluiKEtemt1MDe4TqUc48DLH0iaUGxVun9f8y3VJ0dElnUIqEqftq0MZ660HS7zI1A8VANhDEGF5TPG7FOciMLTe41CrevQjNjYf6u81XJ-fVYcII8cg-F4P9b8I2ekZ_ggztywM771bUMQl55gtBU9_A67OknLqgcceBjtl9wDxnswGoYAZ-WKP75OQe9E2ZeTqwzvi4zttn7T89pehthLnh6PknBy3qUS39dmEReqj_mbwF6NFr152b3h9iUYE8R"/>
+                    </div>
+                    
+                    <!-- Fixed Mobile Quote Card visibility -->
+                    <div class="absolute -bottom-10 left-1/2 -translate-x-1/2 md:translate-x-0 md:-bottom-6 md:-left-6 glass-card p-6 md:p-8 rounded-2xl w-[90%] sm:w-80 max-w-xs z-10 shadow-xl">
+                        <p class="font-body-md text-on-surface-variant italic leading-relaxed text-sm md:text-base">
+                            "I believe too many people underestimate the opportunities sitting inside an app they already use every day."
+                        </p>
+                        <div class="mt-4 border-t border-outline-variant pt-2">
+                            <p class="text-label-caps font-label-caps text-secondary">Confidence Udeh</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flex flex-col gap-6 order-1 md:order-2 mt-8 md:mt-0">
+                    <span class="font-label-caps text-label-caps tracking-widest text-secondary">MEET YOUR COACH</span>
+                    <h2 class="font-headline-lg text-headline-lg-mobile md:text-headline-lg">Confidence Udeh</h2>
+                    <p class="text-body-lg font-body-lg text-on-surface-variant">
+                        I created the WhatsApp Influencing Program because I believe too many people underestimate the opportunities sitting inside an app they already use every day.
+                    </p>
+                    <p class="text-body-lg font-body-lg text-on-surface-variant">
+                        This program is built to give you practical frameworks, implementation steps, and real strategies-not empty motivation.
+                    </p>
+                    <div class="p-8 bg-surface-container-low rounded-3xl border-l-4 border-brand-gold">
+                        <p class="text-headline-md font-headline-md text-on-background italic mb-4">
+                            "My goal is simple: to help you build influence with integrity, confidence, and consistency."
+                        </p>
+                        <p class="font-headline-md text-brand-gold font-bold">- Confidence Udeh</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Ready to Start -->
+        <section class="py-section-gap bg-surface-container-low" id="join">
+            <div class="max-w-container-max mx-auto px-margin-mobile md:px-gutter flex flex-col md:flex-row gap-16 items-center">
+                <div class="flex-1 flex flex-col gap-8">
+                    <h2 class="font-headline-lg text-headline-lg-mobile md:text-headline-lg">Ready To Start?</h2>
+                    <p class="text-body-lg font-body-lg text-on-surface-variant">
+                        Your WhatsApp can become more than a messaging app. <br/>
+                        It can become your platform. Your portfolio. Your community. Your marketing channel. <br/>
+                        Your personal brand. Your next opportunity.
+                    </p>
+                    <p class="font-headline-md text-body-md text-on-background">
+                        If you’re ready to build something meaningful, join the WhatsApp Influencing Program today and start creating influence that lasts.
+                    </p>
+                    <!-- Button Fixed to match Header size -->
+                    <button class="btn-gold text-white px-6 py-3 rounded-full font-label-caps text-label-caps tracking-widest uppercase w-fit shadow-lg shadow-brand-gold/20 flex items-center justify-center"><a href="https://chat.whatsapp.com/HV9v1Q0GipHHsAC2YW43qd?s=cl&p=a&ilr=1&amv=3" class="text-white no-underline">
+                        JOIN THE PROGRAM NOW </a><span class="material-symbols-outlined align-middle ml-2 text-base">arrow_forward</span>
+                    </button>
+                </div>
+                <div class="flex-1 w-full">
+                    <div class="glass-card p-12 rounded-[3rem] text-center flex flex-col gap-8 border-brand-gold/30">
+                        <div class="flex justify-center">
+                            <div class="w-20 h-20 bg-brand-gold rounded-full flex items-center justify-center">
+                                <span class="material-symbols-outlined text-white text-4xl">workspace_premium</span>
+                            </div>
+                        </div>
+                        <h3 class="font-headline-lg text-headline-md">Your WhatsApp <br/>Can Change Your Life Too!</h3>
+                        <p class="font-label-caps text-label-caps tracking-[0.2em] text-secondary">LEARN. IMPLEMENT. EARN.</p>
+                        
+                        <!-- Button Fixed to match Header size -->
+                        <button class="bg-primary text-white px-6 py-3 rounded-full font-label-caps text-label-caps tracking-widest uppercase hover:bg-brand-gold transition-colors duration-500 w-full md:w-auto mx-auto"><a href="https://chat.whatsapp.com/HV9v1Q0GipHHsAC2YW43qd?s=cl&p=a&ilr=1&amv=3" class="text-white no-underline">
+                            SECURE YOUR SPOT
+                        </a></button>
+                        
+                        <p class="text-body-md font-body-md text-on-surface-variant/70">Limited slots available for this intake.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Professional & Upgraded Footer -->
+    <footer class="bg-[#111111] text-white border-t border-brand-gold/20 pt-20 pb-10">
+        <div class="max-w-container-max mx-auto px-margin-mobile md:px-gutter grid grid-cols-1 md:grid-cols-4 gap-12 md:gap-8">
+            <!-- Brand Column -->
+            <div class="md:col-span-2 flex flex-col gap-6">
+                <div class="text-headline-md font-headline-md uppercase tracking-tighter">
+                    WhatsApp <span class="text-brand-gold">Influencing</span>
+                </div>
+                <p class="text-white/70 text-body-md font-body-md max-w-sm">
+                    Empowering individuals to build profitable personal brands, grow engaged communities, and monetize their influence natively through their everyday app.
+                </p>
+            </div>
+            
+            <!-- Quick Links Column -->
+            <div class="flex flex-col gap-4">
+                <h4 class="font-label-caps text-label-caps tracking-widest text-brand-gold mb-2">QUICK LINKS</h4>
+                <a href="#about" class="text-white/70 hover:text-white transition-colors text-body-md">About the Program</a>
+                <a href="#join" class="text-white/70 hover:text-white transition-colors text-body-md">Enroll Now</a>
+            </div>
+
+            <!-- Legal Column -->
+            <div class="flex flex-col gap-4">
+                <button class="bg-primary text-white px-6 py-3 rounded-full font-label-caps text-label-caps tracking-widest uppercase hover:bg-brand-gold transition-colors duration-500 w-full md:w-auto mx-auto"><a href="https://chat.whatsapp.com/HV9v1Q0GipHHsAC2YW43qd?s=cl&p=a&ilr=1&amv=3" class="text-white no-underline">
+                            SECURE YOUR SPOT
+                </a>
+                </button>
+            </div>
+        </div>
+
+        <div class="max-w-container-max mx-auto px-margin-mobile md:px-gutter mt-16 pt-8 border-t border-white/10 flex flex-col md:flex-row justify-between items-center gap-4 text-white/50 text-sm">
+            <p>© 2026 The WhatsApp Influencing Program. All rights reserved.</p>
+             <p class="font-body-md text-body-md text-on-surface-variant">Designed by <a href="https://qorv.org" target="_blank" rel="noopener noreferrer" class="hover:text-white transition-colors duration-300">QORV LTD</a></p>
+        </div>
+    </footer>
+
+    <!-- FAB for quick action -->
+    <button class="fixed bottom-8 right-8 btn-gold text-white w-16 h-16 rounded-full shadow-2xl flex items-center justify-center z-50 md:hidden animate-bounce">
+        <span class="material-symbols-outlined text-3xl"><a href="https://chat.whatsapp.com/HV9v1Q0GipHHsAC2YW43qd?s=cl&p=a&ilr=1&amv=3" class="text-white no-underline">
+            chat</a></span>
+    </button>
+
+    <!-- YouTube API & Micro-Interactions Script -->
+    <script>
+        // Load the IFrame Player API code asynchronously
+        var tag = document.createElement('script');
+        tag.src = "https://www.youtube.com/iframe_api";
+        var firstScriptTag = document.getElementsByTagName('script')[0];
+        firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+        var player;
+        function onYouTubeIframeAPIReady() {
+            player = new YT.Player('youtube-player', {
+                height: '100%',
+                width: '100%',
+                videoId: '5kQPGkldJnI', // Extracted from provided URL
+                playerVars: {
+                    'playsinline': 1,
+                    'controls': 1,
+                    'mute': 1, // Must start muted for auto-play on scroll to work in modern browsers
+                    'rel': 0
+                },
+                events: {
+                    'onReady': onPlayerReady
+                }
+            });
+        }
+
+        function onPlayerReady(event) {
+            // 1. Intersection Observer for Auto-Play on Scroll
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        player.playVideo();
+                    } else {
+                        player.pauseVideo();
+                    }
+                });
+            }, { threshold: 0.5 }); // Triggers when 50% of the video is visible
+
+            observer.observe(document.getElementById('youtube-player'));
+
+            // 2. Custom Mute/Unmute Toggle functionality
+            const muteBtn = document.getElementById('mute-toggle');
+            const muteIcon = document.getElementById('mute-icon');
+            const muteText = document.getElementById('mute-text');
+
+            muteBtn.addEventListener('click', () => {
+                if (player.isMuted()) {
+                    player.unMute();
+                    muteIcon.textContent = 'volume_up';
+                    muteText.textContent = 'Mute Video';
+                } else {
+                    player.mute();
+                    muteIcon.textContent = 'volume_off';
+                    muteText.textContent = 'Unmute Video';
+                }
+            });
+        }
+
+        // Mobile Menu Toggle Script
+        const mobileBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        
+        if(mobileBtn && mobileMenu) {
+            mobileBtn.addEventListener('click', () => {
+                mobileMenu.classList.toggle('hidden');
+                if (mobileMenu.classList.contains('hidden')) {
+                    mobileBtn.textContent = 'menu';
+                } else {
+                    mobileBtn.textContent = 'close';
+                }
+            });
+
+            // Close menu when a link is clicked
+            const mobileLinks = mobileMenu.querySelectorAll('a');
+            mobileLinks.forEach(link => {
+                link.addEventListener('click', () => {
+                    mobileMenu.classList.add('hidden');
+                    mobileBtn.textContent = 'menu';
+                });
+            });
+        }
+
+        // Micro-interactions and scroll effects
+        window.addEventListener('scroll', () => {
+            const nav = document.querySelector('nav');
+            if (window.scrollY > 50) {
+                nav.classList.add('shadow-md');
+            } else {
+                nav.classList.remove('shadow-md');
+            }
+        });
+
+        // Hover effect for Learning cards
+        const learnItems = document.querySelectorAll('.custom-scrollbar > div');
+        learnItems.forEach(item => {
+            item.addEventListener('mouseenter', () => {
+                item.classList.add('translate-x-2', 'bg-secondary-container/10');
+            });
+            item.addEventListener('mouseleave', () => {
+                item.classList.remove('translate-x-2', 'bg-secondary-container/10');
+            });
+        });
+    </script>
+</body>
+</html>
